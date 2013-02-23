@@ -1,0 +1,411 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/** Adam site theme CSS */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', Georgia, Times, serif;
+  color: #2E2E2E;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+p, div, body {
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  color: #2E2E2E;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.block-system-main .content p, 
+.block-system-main .content ul, 
+.block-system-main .content ol, 
+.block-system-main .content div {
+  font-size: 18px;
+}
+
+.field-name-field-blog-tags .field-item {
+  font-size: 15px;
+}
+
+/* Resizes the logo to a standard height */
+#logo {
+  height: 150px;
+}
+
+.site-name a {
+  color: #2E2E2E;
+}
+/*#section-header {
+display: none;
+}*/
+/* Makes sticky footer */
+HTML, BODY {
+  height: 100%;
+  background: #EDEAE4;
+}
+
+#page {
+  min-height: 100%;
+  position: relative;
+}
+
+#section-content {
+  padding-bottom: 160px;
+}
+
+#section-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #2D2D2D;
+  border-top: 1px solid black;
+  border-color: black;
+}
+
+/* Adds top black bar */
+#zone-topbar-wrapper {
+  border-bottom: 1px solid black;
+  background-color: #2D2D2D;
+  height: 30px;
+}
+
+/* Make links non-underline by default and have link fade in */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a {
+-webkit-transition: color .5s ease-in;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Now themes the top menu and footer */
+#region-footer-second .block {
+  margin-top: 2em;
+}
+.block-superfish-1 {
+  float: right;
+  font-weight: bold;
+  color: #BBB;
+}
+
+.block-superfish-1 a,
+.block-block-1 p,
+.block-block-1 a {
+  color: #BBB;
+  font-size: 12px;
+}
+
+.block-superfish-1 a.active,
+.block-block-1 a.active {
+  color: white;
+}
+
+.block-superfish-1 li {
+  margin: 10px;
+}
+
+.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, .sf-menu.sf-navbar.sf-shadow ul ul {
+  background: #2D2D2D;
+  border-top: 0px;
+  border-color: black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/*
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+  top: 1.6em;
+}
+*/
+
+ul#superfish-1 ul {
+  left: -6.5em;
+  top: 1.3em;
+}
+
+/* Adds lower footer entire region */
+/*#zone-footer-wrapper {
+  background: #2D2D2D;
+  border-top: 1px solid black;
+  border-color: black;
+}
+*/
+/* Theme the social icons on every page in the footer */
+#zone-footer .block-views-social-media-block-1 {
+  float: right;
+  
+}
+#zone-footer .block-block-1 {
+  float: left;
+}
+
+#block-views-social-media-block-1 table {
+  border: 0px;
+}
+
+.social-media-block td:hover {
+  background: #FFFFFF;
+}
+
+#block-views-social-media-block-1 table tr:hover, #block-views-social-media-block-1 table tr.even:hover, #block-views-social-media-block-1 table tr.odd:hover {
+  background: none;
+}
+
+.social-media-block tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+  background: none;
+}
+
+.social-media-block table tbody tr td:hover {
+/*.social-media-block td:hover { */
+  background: #FFFFFF;
+}
+
+.field-type-addthis {
+  float: right;
+  min-width: 185px;
+  padding: 0 1em;
+}
+
+#comments .filter-wrapper {
+  display: none;
+}
+
+.field-name-field-blog-tags .field-item {
+  float: left;
+  padding-right: 1em;
+}
+
+.field-name-field-blog-tags {
+  padding-bottom: 2em;
+}
+
+.node-type-blog .submitted {
+  font-weight: bold;
+  border-top: 1px solid #BBB;
+  padding-top: 0.5em;
+}
+
+.field-name-field-basic-page-social {
+  position: relative;
+  bottom: 1.3em;
+}
+
+.node-type-blog h1 {
+  margin-bottom: 10px;
+}
+
+.block-twitter-block h2 {
+  height: 50px;
+  padding-top: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-twitter-block .twitter-image {
+  float: left;
+}
+
+.more-link {
+  text-align: left;
+}
+
+.block-twitter-block .twitter-image img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.region-sidebar-first .block, .region-sidebar-second .block {
+  margin-top: 1em;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: solid 1px #D4CDBF;
+  background: #F7F1E4;
+}
+
+.region-sidebar-first .block-inner, .region-sidebar-second .block-inner {
+  border: solid 1px white;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.region-sidebar-first .block-inner:hover, .region-sidebar-second .block-inner:hover {
+  background: #C5BFB2;
+}
+
+#section-header {
+  background: #F7F1E4;
+  border-bottom: solid 1px white;
+  padding-bottom: 1em;
+}
+
+#section-content {
+  border-top: solid 1px #D4CDBF;
+}
+
+.zone-content .region-inner {
+  margin-top: 1em;
+}
+
+code, tt, pre {
+  background-color: #F6F6F2;
+  font-family: "Bitstream Vera Sans Mono",Monaco,"Lucida Console",monospace;
+  font-size: 0.9230em;
+  line-height: 1.5em;
+  padding: 1px;
+  white-space: pre-wrap;
+}
+
+blockquote {
+  margin: 20px 0 20px 20px;
+  padding: 10px 10px 1px;
+  background-color: #F6F6F6;
+  border-left: 4px solid #CCC;
+}
+
+.region-content img,
+.block-twitter-block img {
+  vertical-align: bottom;
+  border: solid 1px white;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  margin: 2.5%;
+}
+
+/** front page jazz **/
+.front-page-blog-view-listing .views-field-body {
+  padding: 1em;
+  max-width: 550px;
+  font-weight: bold;
+  min-height: 175px;
+}
+.front-page-blog-view-listing .views-field-body p {
+  color: #2E2E2E;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+}
+.front-page-blog-view-listing .views-field-title h3 {
+  margin-bottom: 0px;
+  clear: both;
+}
+.front-page-blog-view-listing .views-row {
+  height: 285px;
+}
+
+.front-page-blog-view-listing .views-field-field-blog-image {
+  position: absolute;
+  width: 100% !important;
+  height: auto !important;
+}
+.front-page-blog-view-listing .views-field-field-blog-image img,
+.field-name-field-blog-image img {
+  width: 95% !important;
+  height: auto !important;
+}
+/** Retheme the pager **/
+.pager {
+  border: none;
+  background: none;
+}
+.pager li {
+  border: none;
+  border-color: none;
+  font-family: 'Ubuntu',sans-serif;
+}
+.pager li a {
+  background: none;
+}
+.pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
+  width: 70px;
+}
+/** Links button format **/
+.blog-node-links a {
+  text-transform: lowercase;
+  display: block;
+  float: left;
+  text-decoration: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  margin: 0 0.5em 0.5em 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  background: #DDD url(/sites/all/themes/omega/omega/images/button.png) repeat-x;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,white),color-stop(1,#DDD));
+  background: -moz-linear-gradient(top center,white 0%,#DDD 100%);
+  border: 1px solid;
+  border-color: #DDD #BBB #999;
+  cursor: pointer;
+  color: #333;
+  font: bold 12px/1.2 Arial,sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 4px 10px 3px;
+  text-shadow: white 0 1px 1px;
+  width: auto;
+}
+/** Theme archive block **/
+div.adam-archive-block h3 {
+ cursor: pointer;
+ margin: 0;
+/* font-size: 1em;*/
+ font-weight: normal;
+}
+div.adam-archive-block ul {
+ padding: 0 0 0 10px;
+ list-style: none;
+}
+
+/** Recent Comments **/
+.block-system-main .view-comments-recent .views-row {
+  border-bottom: solid 1px #D4CDBF;
+  margin-bottom: 0px;
+}
+.block-system-main .view-comments-recent .views-row-odd {
+  background-color: #F7F1E4;
+}
+
+#comments .form-item-subject input {
+  width: 100%;
+}
+
+/** Bullets **/
+.node ol, .node ul {
+  padding-left: 3em;
+}
+
+/** colorise new comments **/
+.new,
+.updated {
+  color: red;
+}
+
+.region-sidebar-first .block p,
+.region-sidebar-second .block p {
+  margin-bottom: 0px;
+}
